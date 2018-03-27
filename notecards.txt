@@ -1,0 +1,13 @@
+Class - The blueprint for a object\
+Object - An instance of a class\
+Abstraction - Separates implementation from interface\
+Scope Resolution Operator - Tells the compiler that the coming function call is part of the prepended class\
+Dot Operator - Used to reference individual members of classes and structures. Is applied to this object\
+Arrow Operator - Used to reference individual members of classes or structures. Is used with a pointer to an object\
+Visibility Levels - Public and Private\
+Public Visibility - Allows data members to be accessed by other clients\
+Private Visibility - Protects data members from being accessed by other clients\
+Constructor - Member function that initializes an instance of a class\
+Constructor Execution - Executes when an instance of a class is initialized\
+Default Constructor - Constructor called when no parameters have been given\
+Parameterized Constructor - Constructor that has been provided parameters\

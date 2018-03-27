@@ -1,0 +1,195 @@
+Intro to OOP:
+- Object and class
+- The sequence to define and use a class in a program
+- How/when to use scope resolution operator
+- How/when to the dot operator
+- Should be able to write the prototype and implementation of a simple class
+
+Visibility/protection levels and constructors:
+- What are the visibility levels in C++? Why these levels?
+- When can one access public members, when can one access private members?
+- What is the constructor of a class?
+- When is the constructor executed?
+- What is a default constructor?
+- How to invoke non-default constructor?
+
+Friend, convert constructor, destructor:
+- How to declare a friend function?
+- What can a friend function do?
+- What is the difference between a friend function and a normal function?
+- Is a friend function public or private?
+- friend function .vs. member function 
+- What is a convert constructor, when is it called?
+- How to disable the implicit invocation of a conversion constructor?
+- What is a copy constructor and what does it do (shallow vs deep copy).
+- When is a copy constructor called
+- What does a copy constructor look like and why are the parameters passed the way they are.
+- How is a copy constructor declared and implemented (with deep and shallow copies).
+- What is a destructor? When it is called?
+
+Operator overloading:
+- What effect does operator overloading achieve?
+- overload operators – need to be able to implement:
+   ==, !=, >, >=, <, <=, =
+- Overloading >> and << operator as friend functions
+- Expressions with operator form and function form:
+  a<=b --> a.operator<=(b);
+- Need to able to be write code for operator overloading
+- How is an assignment operator different from a copy constructor? (and how it differs from the copy constructor).
+- What does the signature for the assignment operator look like.
+- What does it return and why
+	
+The const and static keywords:
+    • Understand each of the const used in the following program.
+
+Class SomeClass 
+{
+   public:
+      abc();
+      void show() const;  // const 1
+      void what();
+   private:
+      void print(const abc & x);   // const 2 
+      int c;
+      const int d;          // const 3
+      static const int f;   // const 4
+};
+
+main()
+{
+    const int I = 10;  // const 5
+}
+
+- What does the term calling object refer to?
+- What is a const member function?
+- What is a const object?
+- What is const member data?
+- The use of initialization list (ctor)
+- What is static used for?
+- What is a static member function’s limitation?
+- What is a static const used for?
+- What is the difference between class and instance data and methods?
+
+Composition:
+- Be able to code with objects within objects
+- The order of constructor invocation for objects within objects
+- The use of initialization list
+- The use of the dot operator for object within object
+- Use of derefencing with member selection
+
+Array of objects:
+- Be able to use and declare array of objects
+- Know how to access each object element
+- Know how to access the public members of an object element
+
+Pointers:
+- Relationship between variable value, variable address, pointers and 
+  reference
+- pointer assignment, deference
+- What is wrong when returning a pointer to a local variable?
+- pointer arithmetic
+- array form and pointer form for access array elements
+  A[100] == *(A+100)
+
+Overloading/Dynamic memory allocation
+- Operator overloading with different types.
+- Under what situation should we use this allocation mechanism.
+- How to allocate/delete an item and an array of items?
+- the '->' operator: M1_ptr->simplify() == (*M1_ptr).simplify();
+- Correct use of new/delete
+
+'this' pointer:
+- Know what it is all about.
+
+Inheritance:
+- Know the basics
+    - derived vs. base
+    - how to declare
+    - how the “is a” relationship works
+    - Why use inheritance
+- Be able to look at a derived class and know what it has access to.
+- Know the order in which constructors will run
+- Know how to pass parameters to base class' from derived constructors.
+- Know about function overriding
+- Know about scoping
+
+Polymorphism:
+- Know how to create and use an array of pointers to a polymorphic hierarchy.
+- Know about pure virtual functions and abstract class.
+- know dynamic casting and how to use and why to use.
+- Know typeid and why to use.
+- Know the purpose of polymorphism
+
+Standard Template Library:
+- Know how to declare and use containers
+- Know how to use associative containers
+- Know how to use sequential containers
+- Know how to use adaptive containers
+- Know how to use container iterators
+- Know best practices for containers used during the semester
+
+OOP Design and Implementation:
+The development of a successful system depends not only on the use of the appropriate methods and techniques but also on the developer’s commitment to the objectives of the systems. A successful system must: 
+1. satisfy the user requirements, 
+2. be easy to understand by the users and operators, 
+3. be easy to operate, 
+4. have a good user interface, 
+5. be easy to modify, 
+6. be expandable, 
+7. have adequate security controls against misuse of data, 
+8. handle the errors and exceptions satisfactorily, and 
+9. Be delivered on schedule within the budget.
+
+The object-oriented analysis (OOA) approach consists of the following steps: 
+1. Understanding the problem. 
+2. Drawing the specification of requirement of the user and the software. 
+3. Identifying the objects and their attributes. 
+4. Identifying the services that each object is expected to provide (interface). 
+5. Establishing inter-connections (collaborations) between the objects in terms of services required and services rendered.
+
+The object oriented design (OOD) approach may involve the following steps: 
+1. Review of objects created in the analysis phase. 
+2. Specification of class dependencies. 
+3. Organization of class hierarchies. 
+4. Design of classes. 
+5. Design of member functions. 
+6. Design of driver program.
+
+For a class to be useful, it must contain the following functions, in addition to service functions: 
+1. Class management functions.
+    a. How an object is created? 
+    b. How an object is destroyed? 
+2. Class implementation functions. 
+3. What operations are performed on the data type of a class? 
+4. Classes access functions. How do we get information about the internal variables of the class?
+5. Class utility functions. How do we handle errors? 
+6. Other issues that are to be considered are: 
+    a. What kinds of access controls are required for the base classes? 
+    b. Which function can be made virtual? 
+    c. What library classes are expected to be used in a class? 
+    d. The design of the individual classes has a major impact on the overall quality of the software/ 
+
+Given below are some guidelines that should be considered while designing a class:
+    ▪ The public interface of a class should have only functions of the class. 
+    ▪ An object of one class should not send a message directly to a member of another class. 
+    ▪ A function should be declared public only when it is required to be used by the objects of the class. 
+    ▪ A class should be dependent on as few classes as possible. 
+    ▪ Interaction between two classes must be explicit. 
+    ▪ The top class of a structure should represent the abstract model of the target concept.
+
+Five most important features, that a software developer should keep in mind while designing a system. 
+1. Describe why the testing of software is important. 
+2. What do you mean by maintenance of software? How and when it is done? 
+3. Who are the major players in each stage of the system development life cycle? 
+4. What are the limitations of the classic software development life cycle? 
+5. “Software development process is an iterative process”. Discuss. 
+6. Distinguish between the “Water-fall” model and the “fountain” model. 
+7. Distinguish between object-oriented system analysis and system design. Which of the two require more creative talents of the system developer?
+8. Distinguish between the following: 
+    a. Classification relationship and composition relationship 
+    b. Inheritance relationship and client-server relationship. 
+    c. Object in problem space and object in solution space. 
+    d. Data flow diagrams and hierarchical charts. 
+9. Discuss the application of structured design techniques in object-oriented programming. 
+10. What are the critical issues that are to be considered while designing the driver program? Why? 
+11. What is prototyping? How does it help improve the system design?
