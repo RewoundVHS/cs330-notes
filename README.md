@@ -1,4 +1,4 @@
-# cs330-notes
+# CS330 Notes
 This repository holds study material for the upcoming final exam in CS330.
 I encourage you to collaborate with me, if you need help getting started with Git and/or GitHub let me know.
 Please submit changes following the same format with 
