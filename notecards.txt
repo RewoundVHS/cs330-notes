@@ -22,4 +22,4 @@ Const Function - Generally used as observers, cannot modify any of an object's d
 Const Member Data - Data that cannot be modified\
 Ctor Initializer - Used to declare default values in an object\
 Static - Declares members that are not bound to class instances, rather to the class itself\
-Static Member Function Limitations - Cannot acess *this pointer and cannot access non-static members\
+Static Member Function Limitations - Cannot access *this pointer and cannot access non-static members\
