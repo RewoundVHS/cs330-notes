@@ -11,3 +11,15 @@ Constructor - Member function that initializes an instance of a class\
 Constructor Execution - Executes when an instance of a class is initialized\
 Default Constructor - Constructor called when no parameters have been given\
 Parameterized Constructor - Constructor that has been provided parameters\
+Friend Function - Can access protected or private data members and methods\
+Copy Constructor - Allows you to create an exact copy of another object\
+Shallow Copy - Copies data members from the source object directly to the destination object\
+Deep Copy - Copies data members from the source object to destination object and handles dynamic memory\
+Destructor - Deallocates dynamic memory used by an object at the end of lifetime\
+Operator Overloading - Defines the behavior of an operator on an object\
+Overloaded Assignment Operator - Equals operator, returns a reference to this object, *this\
+Const Function - Generally used as observers, cannot modify any of an object's data\
+Const Member Data - Data that cannot be modified\
+Ctor Initializer - Used to declare default values in an object\
+Static - Declares members that are not bound to class instances, rather to the class itself\
+Static Member Function Limitations - Cannot acess *this pointer and cannot access non-static members\
